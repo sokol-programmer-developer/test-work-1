@@ -1,0 +1,638 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a,ul,li{ outline: none;  text-decoration: none;}
+
+.middle,
+.middle-title,
+.middle-title-h2,
+.middle-sort,
+.middle-sort_title,
+.middle-sort_one,
+.middle-sort_two,
+select,
+option,
+.middle-desktop-states,
+.middle-desktop-item,
+.middle-desktop-box,
+.middle-desktop-link,
+.middle-desktop-subBox,
+.middle-desktop-container-text,
+.middle-desktop-h2-h2,
+.middle-desktop-chapter,
+.middle-desktop-box-pic,
+.middle-desktop-box-pic::before,
+.middle-desktop-pic,
+.middle-desktop-part,
+.middle-desktop-icon-h2{
+    display: grid;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.middle{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.react-icons-middle{
+    width: 2.25vw;
+    height: 2.25vh;
+    color: #fff;
+    font-size: 1vh;
+}
+
+.middle-title-h2,
+.middle-title{
+    width: 20vw;
+    height: 8vh;
+    top: 5vh;
+}
+
+.middle-title-h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4vh;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+.middle-sort{
+    grid-template-columns: repeat(3,1fr);
+    width: 50vw;
+    height: 10vh;
+    right: 35vh;
+    top: 15vh;
+    z-index: 15;
+}
+
+.middle-sort_title{
+    width: 12vw;
+    height: 5vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vh;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.middle-sort_one,
+.middle-sort_one form,
+.middle-sort_p{
+    width: 12vw;
+    height: 3vh;
+}
+
+.middle-sort_two,
+.middle-sort_two form,
+.middle-sort_p{
+    width: 12vw;
+    height: 3vh;
+}
+
+select{
+    width: 12vw;
+    height: 3vh;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vh;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: rgba(110,16,94,0.8);
+
+}
+
+option{
+    width: 12vw;
+    height: 2.5vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vh;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: rgba(110,16,94,0.8);
+    border: none;
+}
+
+.middle-desktop-states,
+.middle-desktop-item {
+    width: 100vw;
+    height: 100vh;
+    top: 8vh;
+}
+
+.middle-desktop-item{
+    grid-template-columns: repeat(4,1fr);
+}
+
+.middle-desktop-box,
+.middle-desktop-link,
+.middle-desktop-subBox{
+    grid-template-rows: repeat(3,1fr);
+    width: 20vw;
+    height: 38vh;
+}
+
+.middle-desktop-box-pic,
+.middle-desktop-pic{
+    width: 22vw;
+    height: 35vh;
+}
+
+
+
+.middle-desktop-box-pic::before{
+    position: absolute;
+    content: "";
+    width: 22vw;
+    height: 35vh;
+    background-color: rgba(110,16,94,0.8);
+    transition: all 0.5s linear;
+    z-index: 10;
+}
+
+.middle-desktop-box-pic:focus.middle-desktop-box-pic::before,
+.middle-desktop-box-pic:hover.middle-desktop-box-pic::before{
+    background-color: rgba(110,16,94,0);
+    transition: all 0.5s linear;
+}
+
+.middle-desktop-box-pic:hover + .middle-desktop-container-text{
+    z-index: 0;
+    opacity: 0;
+    transition: all 0.25s linear;
+}
+
+.middle-desktop-container-text{
+    width: 20vw;
+    height: 15vh;
+    bottom: 15vh;
+    z-index: 10;
+
+}
+
+.middle-desktop-h2-h2{
+    width: 20vw;
+    height: 5vh;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5vh;
+    font-weight: 400;
+    color: #ffffff;
+    transition: all 0.25s linear;
+    z-index: 11;
+}
+
+.middle-desktop-chapter{
+    grid-template-rows: repeat(3,1fr);
+
+    width: 15vw;
+    height: 10vh;
+    z-index: 11;
+}
+
+
+
+.middle-desktop-container-text:focus,
+.middle-desktop-container-text:hover{
+    z-index: 0;
+    opacity: 0;
+}
+.middle-desktop-icon-h2:focus,
+.middle-desktop-icon-h2:hover{
+   z-index: 0;
+   opacity: 0;
+}
+
+.middle-desktop-part{
+    grid-template-columns: repeat(2,1fr);
+    width: 10vw;
+    height: 3vh;
+}
+
+.middle-desktop-icon-h2{
+    width: 7vw;
+    height: 3vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vh;
+    font-weight: 400;
+    color: #ffffff;
+    transition: all 0.25s linear;
+}
+
+
+
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+
+
+    .middle{
+        width: 100vw;
+        height: 230vh;
+    }
+
+
+    .react-icons-middle{
+        width: 5vw;
+        height: 5vh;
+        color: #fff;
+        font-size: 1vh;
+    }
+
+    .middle-title-h2{
+        width: 20vw;
+        height: 8vh;
+    }
+    .middle-title{
+        width: 20vw;
+        height: 8vh;
+        top: 20vh;
+    }
+
+    .middle-title-h2{
+        font-family: 'Roboto', sans-serif;
+        font-size: 6vh;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+
+    .middle-sort{
+        grid-template-columns: repeat(3,1fr);
+        top: 30vh;
+        width: 90vw;
+        height: 20vh;
+        left: 0.1vh;
+        z-index: 15;
+
+    }
+
+    .middle-sort_title{
+        width: 30vw;
+        height: 5vh;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3vh;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    .middle-sort_one,
+    .middle-sort_one form,
+    .middle-sort_p{
+        width: 28vw;
+        height: 5vh;
+        left: 0.5vh;
+
+    }
+
+    .middle-sort_two,
+    .middle-sort_two form,
+    .middle-sort_p{
+        width: 28vw;
+        height: 5vh;
+        right: 0.5vh;
+    }
+
+    select  {
+        width: 29vw;
+        height: 5vh;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2vh;
+        font-weight: 500;
+        color: #ffffff;
+        background-color: rgba(110,16,94,0.8);
+    }
+
+    option{
+        width: 10vw;
+        height: 2vh;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5vh;
+        font-weight: 500;
+        color: #ffffff;
+        border: none;
+    }
+
+    .middle-desktop-states{
+        width: 100vw;
+        height: 200vh;
+        top: 20vh;
+    }
+    .middle-desktop-item {
+        width: 100vw;
+        height: 200vh;
+    }
+
+    .middle-desktop-item{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .middle-desktop-box,
+    .middle-desktop-link,
+    .middle-desktop-subBox{
+        grid-template-rows: repeat(3,1fr);
+        width: 45vw;
+        height: 38vh;
+    }
+
+    .middle-desktop-box-pic,
+    .middle-desktop-pic{
+        width: 45vw;
+        height: 35vh;
+
+    }
+
+
+
+    .middle-desktop-box-pic::before{
+        position: absolute;
+        content: "";
+        width: 45vw;
+        height: 35vh;
+        background-color: rgba(110,16,94,0.8);
+        transition: all 0.5s linear;
+        z-index: 10;
+    }
+
+    .middle-desktop-box-pic:hover.middle-desktop-box-pic::before{
+        background-color: rgba(110,16,94,0);
+        transition: all 0.5s linear;
+    }
+
+
+
+    .middle-desktop-box-pic:focus.middle-desktop-box-pic::before,
+    .middle-desktop-box-pic:hover.middle-desktop-box-pic::before{
+        background-color: rgba(110,16,94,0);
+        transition: all 0.5s linear;
+    }
+
+    .middle-desktop-box-pic:hover + .middle-desktop-container-text{
+        z-index: 0;
+        opacity: 0;
+        transition: all 0.25s linear;
+    }
+
+    .middle-desktop-container-text{
+        width: 40vw;
+        height: 20vh;
+        bottom: 20vh;
+        z-index: 10;
+
+    }
+
+
+    .middle-desktop-container-text:focus,
+    .middle-desktop-container-text:hover{
+        z-index: 0;
+        opacity: 0;
+    }
+    .middle-desktop-icon-h2:focus,
+    .middle-desktop-icon-h2:hover{
+        z-index: 0;
+        opacity: 0;
+    }
+
+
+    .middle-desktop-h2-h2{
+        width: 40vw;
+        height: 5vh;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3vh;
+        font-weight: 400;
+        color: #ffffff;
+        transition: all 0.25s linear;
+        z-index: 11;
+    }
+
+    .middle-desktop-chapter{
+        grid-template-rows: repeat(3,1fr);
+        width: 40vw;
+        height: 15vh;
+        z-index: 11;
+    }
+
+    .middle-desktop-part{
+        grid-template-columns: repeat(2,1fr);
+        width: 40vw;
+        height: 4.5vh;
+    }
+
+    .middle-desktop-icon-h2{
+        width: 18vw;
+        height: 3vh;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2vh;
+        font-weight: 400;
+        color: #ffffff;
+        transition: all 0.25s linear;
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .middle{
+        width: 100vw;
+        height: 600vh;
+    }
+
+    .react-icons-middle{
+        width: 8vw;
+        height: 6vh;
+        color: #fff;
+        font-size: 1vh;
+    }
+
+
+
+    .middle-title{
+        width: 80vw;
+        height: 8vh;
+        top: 15vh;
+    }
+    .middle-title-h2{
+        width: 80vw;
+        height: 8vh;
+
+    }
+
+    .middle-title-h2{
+        font-family: 'Roboto', sans-serif;
+        font-size: 8vh;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+
+    .middle-sort{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 2vh;
+        width: 80vw;
+        height: 10vh;
+        top: 33vh;
+        z-index: 15;
+        right: 0;
+        left: 0;
+    }
+
+    .middle-sort_title{
+        width: 50vw;
+        height: 10vh;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3vh;
+        font-weight: 500;
+        color: #ffffff;
+        margin-top: 5vh;
+
+    }
+
+    .middle-sort_one,
+    .middle-sort_one form,
+    .middle-sort_p{
+        width: 80vw;
+        height: 10vh;
+
+
+
+    }
+
+    .middle-sort_two,
+    .middle-sort_two form,
+    .middle-sort_p{
+        width: 80vw;
+        height: 10vh;
+    }
+
+    select{
+        width: 80vw;
+        height: 8vh;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3vh;
+        font-weight: 500;
+        color: #ffffff;
+        background-color: rgba(110,16,94,0.8);
+
+    }
+
+    option{
+        width: 50vw;
+        height: 7vh;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3vh;
+        font-weight: 500;
+        color: #ffffff;
+        background-color: rgba(110,16,94,0.8);
+        border: none;
+    }
+
+    .middle-desktop-states{
+        width: 100vw;
+        height: 560vh;
+        top: 40vh;
+    }
+    .middle-desktop-item{
+        width: 100vw;
+        height: 540vh;
+    }
+
+    .middle-desktop-item{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .middle-desktop-box,
+    .middle-desktop-link,
+    .middle-desktop-subBox{
+        grid-template-rows: repeat(3,1fr);
+        width: 80vw;
+        height: 64vh;
+
+    }
+
+    .middle-desktop-box-pic,
+    .middle-desktop-pic{
+        width: 80vw;
+        height: 60vh;
+    }
+
+
+
+    .middle-desktop-box-pic::before{
+        position: absolute;
+        content: "";
+        width: 80vw;
+        height: 60vh;
+        background-color: rgba(110,16,94,0.8);
+        transition: all 0.5s linear;
+        z-index: 10;
+    }
+
+
+
+    .middle-desktop-box-pic:focus.middle-desktop-box-pic::before,
+    .middle-desktop-box-pic:hover.middle-desktop-box-pic::before{
+        background-color: rgba(110,16,94,0);
+        transition: all 0.5s linear;
+    }
+
+    .middle-desktop-box-pic:hover + .middle-desktop-container-text{
+        z-index: 0;
+        opacity: 0;
+        transition: all 0.25s linear;
+    }
+
+    .middle-desktop-container-text{
+        width: 80vw;
+        height: 35vh;
+        bottom: 35vh;
+        z-index: 10;
+
+
+    }
+
+    .middle-desktop-h2-h2{
+        width: 80vw;
+        height: 10vh;
+        font-family: 'Roboto', sans-serif;
+        font-size: 4vh;
+        font-weight: 400;
+        color: #ffffff;
+        transition: all 0.25s linear;
+        z-index: 11;
+    }
+
+    .middle-desktop-chapter{
+        grid-template-rows: repeat(3,1fr);
+        width: 80vw;
+        height: 20vh;
+        z-index: 11;
+    }
+
+    .middle-desktop-part{
+        grid-template-columns: repeat(2,1fr);
+        width: 60vw;
+        height: 5vh;
+    }
+
+    .middle-desktop-icon-h2{
+        width: 34vw;
+        height: 5vh;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3vh;
+        font-weight: 400;
+        color: #ffffff;
+        transition: all 0.25s linear;
+
+    }
+
+}

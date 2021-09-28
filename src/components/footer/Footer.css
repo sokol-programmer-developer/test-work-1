@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a,ul,li{ outline: none;  text-decoration: none;}
+
+.footer-social-icon-link,
+.footer-social-icon,
+.react-icons-footer,
+.footer,
+.footer-section,
+.footer-desktop-states,
+.footer-logo,
+.footer-logo-pic,
+.footer-desktop-item,
+.footer-desktop-box,
+.footer-desktop-link,
+.footer-desktop-h2,
+.footer-desktop-button,
+.footer-desktop-h2-h2{
+    display: grid;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.react-icons-footer{
+    width: 3vw;
+    height: 3vh;
+    font-size: 1.5vh;
+    color: #fff;
+}
+
+.footer-social-icon{
+    grid-template-columns: repeat(3,1fr);
+    bottom: 8vh;
+    width: 20vw;
+    height: 5vh;
+    cursor: pointer;
+}
+
+
+.footer-section,
+.footer-desktop-states,
+.footer{
+    width: 100vw;
+    height: 25vh;
+    top: 2vh;
+
+}
+
+.footer-section{
+    grid-template-rows: repeat(2,1fr);
+}
+
+.footer-desktop-states{
+    grid-template-columns: repeat(2,1fr);
+    width: 100vw;
+    height: 20vh;
+}
+
+.footer-logo,
+.footer-logo-pic{
+    width: 8vw;
+    height: 13vh;
+}
+
+.footer-desktop-item{
+    grid-template-columns: repeat(4,1fr);
+    width: 80vw;
+    height: 5vh;
+    bottom: 3vh;
+}
+
+.footer-desktop-h2,
+.footer-desktop-link,
+.footer-desktop-box{
+    width: 20vw;
+    height: 5vh;
+}
+
+.footer-desktop-button{
+    width: 20vw;
+    height: 5vh;
+    border: none;
+    background-color: rgba(110,16,94,0.8);
+    cursor: pointer;
+}
+
+.footer-desktop-h2-h2{
+    width: 10vw;
+    height: 5vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vh;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+
+
+@media screen and (max-width: 1025px) {
+
+
+    .react-icons-footer{
+        width: 10vw;
+        height: 10vh;
+        font-size: 1.5vh;
+        color: #fff;
+    }
+
+    .footer-social-icon{
+        grid-template-columns: repeat(3,1fr);
+        width: 40vw;
+        height: 10vh;
+        top: 1vh;
+        cursor: pointer;
+    }
+    .footer-section,
+    .footer-desktop-states,
+    .footer{
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .footer-section{
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .footer-desktop-states{
+        grid-template-columns: repeat(1,1fr);
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .footer-logo,
+    .footer-logo-pic{
+        width: 25vw;
+        height: 13vh;
+    }
+
+    .footer-desktop-item{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+        width: 90vw;
+        height: 20vh;
+        top: 1vh;
+    }
+
+    .footer-desktop-h2,
+    .footer-desktop-link,
+    .footer-desktop-box{
+        width: 45vw;
+        height: 5vh;
+    }
+
+    .footer-desktop-button{
+        width: 45vw;
+        height: 5vh;
+        border: none;
+        background-color: rgba(110,16,94,0.8);
+        cursor: pointer;
+    }
+
+    .footer-desktop-h2-h2{
+        width: 45vw;
+        height: 10vh;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.3vh;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+}

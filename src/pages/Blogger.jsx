@@ -1,13 +1,16 @@
 import React from  "react";
-import Header from "../components/header/Header";
+import Middle from "../components/middle/Middle";
 
 
-const Home = () => {
+
+
+const Blogger = () => {
+
     return (
         <>
-            <Header/>
+            <Middle />
         </>
     );
 }
 
-export default Home;
+export default Blogger;
